@@ -1,0 +1,103 @@
+*{
+    border:0px;
+    margin: 0px;
+}
+
+body{
+    content: '';
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    background-image: linear-gradient( 115deg, rgba(157, 171, 234, 0.8), rgba(59, 59, 157, 0.7) ), url("https://www.uci.cu/sites/default/files/imagenes/noticias/creatividad-y-trabajo-en-equipo-convergen-en-xi-campamento-caribeno-de-3.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+#title{
+    margin-top: 30px;
+    font-size: 30px;
+    font-style: italic;
+}
+#description{
+    font-size: 20px;
+}
+form{
+    display: block;
+    margin: 10px 550px 100px 550px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: #7FB3D5 ;
+}
+#name-label,#email-label,#number-label,#seleccion,#pepeRadioText,#text-checkbox,#comentarios-label{
+    font-size: 20px;
+    margin:20px 10px 10px 25px;
+}
+#name,#email,#number,#dropdown{
+    margin: 10px 10px 10px 25px;
+    display: block;
+    width: 90%;
+    height: 25px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 4px;
+}
+#virtual-label,#presencial-label,#no-asistir-label,#experiencia-label,#aprender-label,#otro-label,#conocer-label,#retos-label{
+   font-size: 18px;  
+}
+#virtual,#presencial,#no-asistir,#aprender,#experiencia,#retos,#conocer,#otro{
+    margin: 5px 5px 5px 25px;   
+}
+#comentarios{
+    margin: 5px 10px 5px 25px;
+    width: 90%;
+    display: block;
+    height: 100px;
+    resize: vertical;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+#submit{
+    margin: 10px 10px 10px 15px;
+    display: block;
+    width: 95%;
+    background-color: #58D68D;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    font-size: 17px;
+    
+}
+/*Laptop*/
+/*Laptop*/
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    form{
+        margin: 10px 20px 10px 20px;
+    }   
+}
+/*Movil*/
+@media screen and (max-width: 480px) and (min-width: 300px){
+    form{
+        margin: 10px 20px 10px 20px;
+    }
+    #title{
+        font-size: 25px;
+    }
+    #description{
+        font-size: 17px;
+    }
+    
+     #name-label,#email-label,#number-label,#seleccion,#pepeRadioText,#text-checkbox,#comentarios-label,#virtual-label,#presencial-label,#no-asistir-label,#experiencia-label,#aprender-label,#otro-label,#conocer-label,#retos-label,#comentarios{
+        font-size: 15px;
+    }
+    
+}
+/*Tablet*/
+@media screen and (max-width: 768px) and (min-width: 481px){
+    form{
+        margin: 10px 20px 10px 20px;
+    }
+}

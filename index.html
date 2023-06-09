@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1 id ="title">Barranquilla: Training Camp </h1><br>
+    <p id ="description">Pon a prueba tus capacidades en este nuevo desafio.</p><br>
+    <!-- campos: formulario -->
+    <form id ="survey-form">
+        <!-- nombre -->
+        <label id="name-label" for="name">Nombre:</label><br>
+        <input type="text" id ="name" name="name" placeholder="Ingrese su nombre" required>
+
+        <!-- email -->
+        <label id="email-label" for="email">Email:</label><br>
+        <input type="email" id ="email" name="email" placeholder="Ingrese su email" required>
+
+        <!-- numero -->
+        <label id ="number-label"for="number">Edad:</label><br>
+        <input type="number" id ="number" name="edad"  placeholder="Ingrese su edad" min ="14" max="90" aria-placeholder="Edad">
+
+        <!-- seleccion -->
+        <label id ="seleccion">Elige tu ocupación:</label><br>
+
+        <select name="opciones" id="dropdown" required>
+            <option disabled selected value>Elige una opción</option>
+            <option value="estudiante">Estudiante.</option>
+            <option value="profesional">Profesional.</option>
+            <option value="otro">Otro.</opcion>
+        </select>
+        
+        <!-- radio buttons -->
+        <p id ="pepeRadioText">¿De que forma asistirá?:</p>
+
+        <input name ="user-recommend" value="virtual" type="radio" id="virtual">
+        <label for="virtual" id="virtual-label">Virtual.</label><br>
+        
+        <input type="radio" id="presencial" name="user-recommend" value="presencial">
+        <label for="presencial" id="presencial-label">Presencial</label><br>
+        
+        <input type="radio" id="no-asistir" name="user-recommend" value="no-asistir">
+        <label for="no-asistir" id="no-asistir-label">No asistiré.</label><br>
+        
+        <!-- checkboxes -->
+        <p id="text-checkbox">¿Que buscas en este Training Camp?</p>
+
+        <input type="checkbox" name="prefer" id="experiencia" value="experiencia">
+        <label for="experiencia"id="experiencia-label"></label>Experiencia.<br>
+
+        <input type="checkbox" name="prefer" id="aprender" value="aprender">
+        <label for="aprender"id="aprender-label"></label>Aprender.<br>
+
+        
+        <input type="checkbox" name="prefer" id="conocer" value="conocer">
+        <label for="conocer"id="conocer-label"></label>Conocer nuevas personas.<br>
+
+        
+        <input type="checkbox" name="prefer" id="retos" value="retos">
+        <label for="retos"id="retos-label"></label>Nuevos retos.<br>
+
+        <input type="checkbox" name="prefer" id="otro" value="otro">
+        <label for="otro"id="otro-label"></label>Otro.<br>
+        
+        <!-- textarea -->
+        <p id="comentarios-label">Algun comentario?</p><br>
+        <textarea id ="comentarios" name="comentarios" rows="7" cols="33" name="comentarios" placeholder="Cuentanos..."></textarea><br>
+
+        <!-- boton -->
+        <input type="submit" value="Enviar" id="submit">
+
+    </form>
+</body>
+</html>
